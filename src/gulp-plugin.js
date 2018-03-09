@@ -1,5 +1,5 @@
 import through2 from 'through2';
-import {PluginError} from 'gulp-util';
+import PluginError from 'plugin-error';
 import {transformSource} from './helper';
 
 export default flexDirectiveReplacerPlugin;

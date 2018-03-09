@@ -8,7 +8,9 @@ var _through = require('through2');
 
 var _through2 = _interopRequireDefault(_through);
 
-var _gulpUtil = require('gulp-util');
+var _pluginError = require('plugin-error');
+
+var _pluginError2 = _interopRequireDefault(_pluginError);
 
 var _helper = require('./helper');
 
@@ -22,7 +24,7 @@ var PLUGIN_NAME = 'gulp-flex-directive-replacer-plugin';
 function flexDirectiveReplacerPlugin() {
     return _through2.default.obj(function (fileObject, encoding, callback) {
         if (!fileObject.isBuffer()) {
-            return callback(new _gulpUtil.PluginError(PLUGIN_NAME, 'Non-Buffer content is not supported'));
+            return callback(new _pluginError2.default(PLUGIN_NAME, 'Non-Buffer content is not supported'));
         }
 
         try {
@@ -34,7 +36,7 @@ function flexDirectiveReplacerPlugin() {
 
             return callback();
         } catch (error) {
-            return callback(new _gulpUtil.PluginError(PLUGIN_NAME, error));
+            return callback(new _pluginError2.default(PLUGIN_NAME, error));
         }
     });
 }
