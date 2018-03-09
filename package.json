@@ -1,0 +1,30 @@
+{
+    "name": "flex-directive-replacer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "eslint": "eslint src; exit 0",
+        "build": "rm -rf dist && mkdir dist && babel src --out-dir dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mekhonoshyn/flex-directive-replacer.git"
+    },
+    "author": "mekhonoshyn",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mekhonoshyn/flex-directive-replacer/issues"
+    },
+    "homepage": "https://github.com/mekhonoshyn/flex-directive-replacer",
+    "dependencies": {
+        "gulp-util": "^3.0.8",
+        "through2": "^2.0.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-eslint": "^8.2.2",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.18.2"
+    }
+}
