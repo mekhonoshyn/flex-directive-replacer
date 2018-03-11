@@ -4,7 +4,7 @@ import {transformSource} from './helper';
 
 export default flexDirectiveReplacerPlugin;
 
-const PLUGIN_NAME = 'gulp-flex-directive-replacer-plugin';
+const PLUGIN_NAME = 'gulp-flex-directive-replacer';
 
 function flexDirectiveReplacerPlugin() {
     return through2.obj(function (fileObject, encoding, callback) {
