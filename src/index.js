@@ -1,9 +1,9 @@
 import path from 'path';
-import gulpPlugin from './gulp-plugin';
 
+const gulpPluginPath = path.join(__dirname, 'gulp-plugin');
 const webpackLoaderPath = path.join(__dirname, 'webpack-loader');
 
 export {
-    gulpPlugin,
+    gulpPluginPath,
     webpackLoaderPath
 };

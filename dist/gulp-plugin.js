@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = flexDirectiveReplacerPlugin;
 
 
-var PLUGIN_NAME = 'gulp-flex-directive-replacer-plugin';
+var PLUGIN_NAME = 'gulp-flex-directive-replacer';
 
 function flexDirectiveReplacerPlugin() {
     return _through2.default.obj(function (fileObject, encoding, callback) {
